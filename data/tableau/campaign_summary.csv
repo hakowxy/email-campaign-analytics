@@ -1,52 +1,55 @@
-dimension,segment,arm,customers,visits,orders,revenue
-Has bought before,both,Mens E-Mail,2181,687,53,6554.19
-Has bought before,both,No E-Mail,2149,388,20,2536.13
-Has bought before,both,Womens E-Mail,2118,533,31,2842.41
-Has bought before,mens only,Mens E-Mail,9558,1615,110,13172.47
-Has bought before,mens only,No E-Mail,9638,962,53,6702.52
-Has bought before,mens only,Womens E-Mail,9622,1067,59,9369.72
-Has bought before,womens only,Mens E-Mail,9568,1592,104,10585.03
-Has bought before,womens only,No E-Mail,9519,912,49,4669.68
-Has bought before,womens only,Womens E-Mail,9647,1638,99,10825.98
-Customer age,Existing,Mens E-Mail,10621,2247,148,16072.94
-Customer age,Existing,No E-Mail,10611,1419,82,9925.0
-Customer age,Existing,Womens E-Mail,10624,1847,92,11147.84
-Customer age,New,Mens E-Mail,10686,1647,119,14238.75
-Customer age,New,No E-Mail,10695,843,40,3983.33
-Customer age,New,Womens E-Mail,10763,1391,97,11890.27
-Last purchase,1-3 months,Mens E-Mail,7469,1664,122,14871.89
-Last purchase,1-3 months,No E-Mail,7438,1025,67,7018.13
-Last purchase,1-3 months,Womens E-Mail,7486,1361,88,9747.9
-Last purchase,4-6 months,Mens E-Mail,4673,847,49,4708.4
-Last purchase,4-6 months,No E-Mail,4766,504,26,2474.45
-Last purchase,4-6 months,Womens E-Mail,4753,695,38,5630.74
-Last purchase,7-12 months,Mens E-Mail,9165,1383,96,10731.4
-Last purchase,7-12 months,No E-Mail,9102,733,29,4415.75
-Last purchase,7-12 months,Womens E-Mail,9148,1182,63,7659.47
-Spent in past year,$100-350,Mens E-Mail,8780,1613,105,11297.53
-Spent in past year,$100-350,No E-Mail,8880,951,48,5817.69
-Spent in past year,$100-350,Womens E-Mail,8881,1306,63,6699.32
-Spent in past year,< $100,Mens E-Mail,7725,1185,71,8150.18
-Spent in past year,< $100,No E-Mail,7612,646,32,3934.59
-Spent in past year,< $100,Womens E-Mail,7635,1005,61,8723.47
-Spent in past year,> $350,Mens E-Mail,4802,1096,91,10863.98
-Spent in past year,> $350,No E-Mail,4814,665,42,4156.05
-Spent in past year,> $350,Womens E-Mail,4871,927,65,7615.32
-Bought via,Multichannel,Mens E-Mail,2577,545,44,4702.69
-Bought via,Multichannel,No E-Mail,2606,335,18,1604.62
-Bought via,Multichannel,Womens E-Mail,2579,453,36,4573.28
-Bought via,Phone,Mens E-Mail,9240,1504,100,11166.79
-Bought via,Phone,No E-Mail,9327,813,50,6010.81
-Bought via,Phone,Womens E-Mail,9454,1246,67,8290.46
-Bought via,Web,Mens E-Mail,9490,1845,123,14442.21
-Bought via,Web,No E-Mail,9373,1114,54,6292.9
-Bought via,Web,Womens E-Mail,9354,1539,86,10174.37
-Area,Rural,Mens E-Mail,3243,736,44,4937.91
-Area,Rural,No E-Mail,3139,482,26,2408.04
-Area,Rural,Womens E-Mail,3181,581,37,4077.97
-Area,Suburban,Mens E-Mail,9501,1647,118,13997.73
-Area,Suburban,No E-Mail,9625,953,48,6443.38
-Area,Suburban,Womens E-Mail,9650,1427,73,8169.82
-Area,Urban,Mens E-Mail,8563,1511,105,11376.05
-Area,Urban,No E-Mail,8542,827,48,5056.91
-Area,Urban,Womens E-Mail,8556,1230,79,10790.32
+Dimension,Segment,Email,Customers,Visits,Orders,Revenue,Visit rate,Conversion rate,Spend per customer,Visit lift,Visit lift low,Visit lift high,Spend lift,Spend lift low,Spend lift high
+All customers,All customers,No email,21306,2262,122,13908.33,0.10617,0.00573,0.6528,0.0,0.0,0.0,0.0,0.0,0.0
+All customers,All customers,Men's email,21307,3894,267,30311.69,0.18276,0.01253,1.4226,0.07659,0.06995,0.08323,0.76983,0.48514,1.05451
+All customers,All customers,Women's email,21387,3238,189,23038.11,0.1514,0.00884,1.0772,0.04523,0.03889,0.05157,0.42441,0.16896,0.67986
+Has bought before,Both lines,No email,2149,388,20,2536.13,0.18055,0.00931,1.1801,0.0,0.0,0.0,0.0,0.0,0.0
+Has bought before,Both lines,Men's email,2181,687,53,6554.19,0.31499,0.0243,3.0051,0.13444,0.10905,0.15984,1.82499,0.49014,3.15984
+Has bought before,Both lines,Women's email,2118,533,31,2842.41,0.25165,0.01464,1.342,0.0711,0.04648,0.09573,0.16188,-0.81336,1.13712
+Has bought before,Men's only,No email,9638,962,53,6702.52,0.09981,0.0055,0.6954,0.0,0.0,0.0,0.0,0.0,0.0
+Has bought before,Men's only,Men's email,9558,1615,110,13172.47,0.16897,0.01151,1.3782,0.06916,0.05955,0.07876,0.68274,0.24716,1.11831
+Has bought before,Men's only,Women's email,9622,1067,59,9369.72,0.11089,0.00613,0.9738,0.01108,0.00241,0.01975,0.27835,-0.12357,0.68028
+Has bought before,Women's only,No email,9519,912,49,4669.68,0.09581,0.00515,0.4906,0.0,0.0,0.0,0.0,0.0,0.0
+Has bought before,Women's only,Men's email,9568,1592,104,10585.03,0.16639,0.01087,1.1063,0.07058,0.06106,0.0801,0.61573,0.26967,0.96179
+Has bought before,Women's only,Women's email,9647,1638,99,10825.98,0.16979,0.01026,1.1222,0.07399,0.06444,0.08353,0.63165,0.29513,0.96817
+Customer age,Existing,No email,10611,1419,82,9925.0,0.13373,0.00773,0.9354,0.0,0.0,0.0,0.0,0.0,0.0
+Customer age,Existing,Men's email,10621,2247,148,16072.94,0.21156,0.01393,1.5133,0.07783,0.06772,0.08795,0.57797,0.14159,1.01435
+Customer age,Existing,Women's email,10624,1847,92,11147.84,0.17385,0.00866,1.0493,0.04012,0.03043,0.04981,0.11396,-0.27548,0.50339
+Customer age,New,No email,10695,843,40,3983.33,0.07882,0.00374,0.3724,0.0,0.0,0.0,0.0,0.0,0.0
+Customer age,New,Men's email,10686,1647,119,14238.75,0.15413,0.01114,1.3325,0.07531,0.06676,0.08385,0.96002,0.59379,1.32625
+Customer age,New,Women's email,10763,1391,97,11890.27,0.12924,0.00901,1.1047,0.05042,0.04228,0.05856,0.73229,0.40119,1.06338
+Last purchase,1-3 months,No email,7438,1025,67,7018.13,0.13781,0.00901,0.9436,0.0,0.0,0.0,0.0,0.0,0.0
+Last purchase,1-3 months,Men's email,7469,1664,122,14871.89,0.22279,0.01633,1.9911,0.08498,0.07272,0.09725,1.0476,0.46415,1.63105
+Last purchase,1-3 months,Women's email,7486,1361,88,9747.9,0.18181,0.01176,1.3022,0.044,0.03226,0.05574,0.3586,-0.11544,0.83264
+Last purchase,4-6 months,No email,4766,504,26,2474.45,0.10575,0.00546,0.5192,0.0,0.0,0.0,0.0,0.0,0.0
+Last purchase,4-6 months,Men's email,4673,847,49,4708.4,0.18125,0.01049,1.0076,0.0755,0.06142,0.08959,0.48839,0.00886,0.96791
+Last purchase,4-6 months,Women's email,4753,695,38,5630.74,0.14622,0.00799,1.1847,0.04047,0.02716,0.05378,0.66548,0.10983,1.22113
+Last purchase,7-12 months,No email,9102,733,29,4415.75,0.08053,0.00319,0.4851,0.0,0.0,0.0,0.0,0.0,0.0
+Last purchase,7-12 months,Men's email,9165,1383,96,10731.4,0.1509,0.01047,1.1709,0.07037,0.06115,0.07959,0.68577,0.29544,1.0761
+Last purchase,7-12 months,Women's email,9148,1182,63,7659.47,0.12921,0.00689,0.8373,0.04868,0.03982,0.05754,0.35214,0.00147,0.70281
+Spent in past year,$100-350,No email,8880,951,48,5817.69,0.10709,0.00541,0.6551,0.0,0.0,0.0,0.0,0.0,0.0
+Spent in past year,$100-350,Men's email,8780,1613,105,11297.53,0.18371,0.01196,1.2867,0.07662,0.06627,0.08696,0.63159,0.20777,1.05541
+Spent in past year,$100-350,Women's email,8881,1306,63,6699.32,0.14706,0.00709,0.7543,0.03996,0.03018,0.04974,0.0992,-0.24325,0.44164
+Spent in past year,< $100,No email,7612,646,32,3934.59,0.08487,0.0042,0.5169,0.0,0.0,0.0,0.0,0.0,0.0
+Spent in past year,< $100,Men's email,7725,1185,71,8150.18,0.1534,0.00919,1.055,0.06853,0.05834,0.07872,0.53815,0.11277,0.96353
+Spent in past year,< $100,Women's email,7635,1005,61,8723.47,0.13163,0.00799,1.1426,0.04676,0.03693,0.0566,0.62567,0.18802,1.06332
+Spent in past year,> $350,No email,4814,665,42,4156.05,0.13814,0.00872,0.8633,0.0,0.0,0.0,0.0,0.0,0.0
+Spent in past year,> $350,Men's email,4802,1096,91,10863.98,0.22824,0.01895,2.2624,0.0901,0.07474,0.10546,1.39906,0.67413,2.124
+Spent in past year,> $350,Women's email,4871,927,65,7615.32,0.19031,0.01334,1.5634,0.05217,0.03745,0.06689,0.70007,0.0695,1.33064
+Bought via,Multichannel,No email,2606,335,18,1604.62,0.12855,0.00691,0.6157,0.0,0.0,0.0,0.0,0.0,0.0
+Bought via,Multichannel,Men's email,2577,545,44,4702.69,0.21149,0.01707,1.8249,0.08294,0.06259,0.10328,1.20913,0.39105,2.02721
+Bought via,Multichannel,Women's email,2579,453,36,4573.28,0.17565,0.01396,1.7733,0.0471,0.02758,0.06662,1.15754,0.25887,2.05621
+Bought via,Phone,No email,9327,813,50,6010.81,0.08717,0.00536,0.6445,0.0,0.0,0.0,0.0,0.0,0.0
+Bought via,Phone,Men's email,9240,1504,100,11166.79,0.16277,0.01082,1.2085,0.0756,0.06615,0.08506,0.56407,0.16115,0.967
+Bought via,Phone,Women's email,9454,1246,67,8290.46,0.1318,0.00709,0.8769,0.04463,0.03573,0.05353,0.23247,-0.11921,0.58415
+Bought via,Web,No email,9373,1114,54,6292.9,0.11885,0.00576,0.6714,0.0,0.0,0.0,0.0,0.0,0.0
+Bought via,Web,Men's email,9490,1845,123,14442.21,0.19442,0.01296,1.5218,0.07556,0.06525,0.08587,0.85045,0.39718,1.30372
+Bought via,Web,Women's email,9354,1539,86,10174.37,0.16453,0.00919,1.0877,0.04568,0.03571,0.05565,0.41632,0.02455,0.80808
+Area,Rural,No email,3139,482,26,2408.04,0.15355,0.00828,0.7671,0.0,0.0,0.0,0.0,0.0,0.0
+Area,Rural,Men's email,3243,736,44,4937.91,0.22695,0.01357,1.5226,0.0734,0.05424,0.09256,0.7555,0.05092,1.46008
+Area,Rural,Women's email,3181,581,37,4077.97,0.18265,0.01163,1.282,0.02909,0.01067,0.04752,0.51484,-0.11955,1.14924
+Area,Suburban,No email,9625,953,48,6443.38,0.09901,0.00499,0.6694,0.0,0.0,0.0,0.0,0.0,0.0
+Area,Suburban,Men's email,9501,1647,118,13997.73,0.17335,0.01242,1.4733,0.07434,0.06466,0.08401,0.80385,0.35415,1.25355
+Area,Suburban,Women's email,9650,1427,73,8169.82,0.14788,0.00756,0.8466,0.04886,0.0396,0.05812,0.17717,-0.19359,0.54794
+Area,Urban,No email,8542,827,48,5056.91,0.09682,0.00562,0.592,0.0,0.0,0.0,0.0,0.0,0.0
+Area,Urban,Men's email,8563,1511,105,11376.05,0.17646,0.01226,1.3285,0.07964,0.06942,0.08987,0.73651,0.31098,1.16203
+Area,Urban,Women's email,8556,1230,79,10790.32,0.14376,0.00923,1.2611,0.04694,0.03722,0.05667,0.66914,0.24826,1.09001

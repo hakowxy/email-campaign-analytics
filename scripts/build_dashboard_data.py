@@ -68,12 +68,24 @@ for arm, key in ARMS.items():
 (ROOT / "docs").mkdir(exist_ok=True)
 (ROOT / "docs/data.json").write_text(json.dumps(out, separators=(",", ":")))
 
-# Tableau-ready summary: one row per segment value x test arm
+# Tableau-ready extract: one row per segment x email, with lifts vs the control group already calculated
+LABELS = {"No E-Mail": "No email", "Mens E-Mail": "Men's email", "Womens E-Mail": "Women's email"}
+NICE = {"both": "Both lines", "mens only": "Men's only", "womens only": "Women's only"}
 rows = []
-for dim, label in DIMENSIONS.items():
-    for (value, arm), g in df.groupby([dim, "segment"]):
-        rows.append({"dimension": label, "segment": value, "arm": arm, "customers": len(g), "visits": int(g["visit"].sum()),
-                     "orders": int(g["conversion"].sum()), "revenue": round(float(g["spend"].sum()), 2)})
+for dim, label in {"all": "All customers", **DIMENSIONS}.items():
+    groups = [("All customers", df)] if dim == "all" else list(df.groupby(dim))
+    for value, g in groups:
+        c = g[g["segment"] == "No E-Mail"]
+        for arm in ["No E-Mail", *ARMS]:
+            t = g[g["segment"] == arm]
+            row = {"Dimension": label, "Segment": NICE.get(value, value), "Email": LABELS[arm], "Customers": len(t),
+                   "Visits": int(t["visit"].sum()), "Orders": int(t["conversion"].sum()), "Revenue": round(float(t["spend"].sum()), 2),
+                   "Visit rate": round(float(t["visit"].mean()), 5), "Conversion rate": round(float(t["conversion"].mean()), 5),
+                   "Spend per customer": round(float(t["spend"].mean()), 4)}
+            for m, name in [("visit", "Visit lift"), ("spend", "Spend lift")]:
+                d, lo, hi = lift(t[m], c[m]) if arm != "No E-Mail" else (0.0, 0.0, 0.0)
+                row[name], row[f"{name} low"], row[f"{name} high"] = d, lo, hi
+            rows.append(row)
 (ROOT / "data/tableau").mkdir(parents=True, exist_ok=True)
 pd.DataFrame(rows).to_csv(ROOT / "data/tableau/campaign_summary.csv", index=False)
 print("docs/data.json and data/tableau/campaign_summary.csv written")
